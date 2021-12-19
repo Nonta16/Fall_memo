@@ -1,0 +1,63 @@
+/* 入力フォーム(文字)縦幅 */
+input[type=text]{
+    height: 100px;
+}
+
+/* ファイル添付ボタン大きさ */
+input[type=file]{
+    width: 330px;
+    height: 50px;
+}
+
+/* ボタン大きさ */
+input[type=submit]{
+    width: 200px;
+    height: 50px;
+}
+
+/* 画像大きさ指定 */
+.pic{
+    width: 100%;
+    height: auto;
+}
+
+/* 固定ナビ */
+nav{
+    overflow: hidden;
+    background: #ff4c4c;
+    margin-bottom: 50px;
+    
+    position: fixed;
+    width: 100%;
+}
+
+.inner_container{
+    width: 900px;
+    height: 50px;
+    margin: auto;
+}
+
+.menu{
+    color: #ffffff;
+    margin-right: 65px;
+    font-size: 40px;
+    font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+ /*三つ並べる */
+ 
+ .card {
+     max-width: 30%;
+     height: auto;
+     margin: 0 auto;
+ }
+
+.row {
+    max-width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.container {
+    padding-top: 50px;
+}

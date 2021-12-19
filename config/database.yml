@@ -1,0 +1,10 @@
+default_env: &default
+  adapter: postgresql
+  encoding: unicode
+  database: s_memo
+
+development:
+  <<: *default
+
+production:
+  <<: *default

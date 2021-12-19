@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>メモ</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/memo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+</head>
+<body>
+    <% if current_user %>
+        <header>
+            <nav>
+                <ul class="inner_container">
+                      <a href="/" class="menu">ホーム画面</a>
+                      <a href="/setting" class="menu">設定</a>
+                      <a href="/signout" class="menu">ログアウト</a>
+                      <a href="/withdrawal" class="menu">退会</a>
+                </ul>
+            </nav>
+        </header>
+    <% end %>
+    <%= flash[:danger] %>
+    <%= yield %>
+</body>
+</html>
